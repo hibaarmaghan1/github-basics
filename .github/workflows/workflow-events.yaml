@@ -2,6 +2,10 @@ name: events
 
 on:
   push:
+  pull_request:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   echo:
